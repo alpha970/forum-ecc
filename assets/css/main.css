@@ -107,6 +107,19 @@ section {
   background-repeat: no-repeat;
 }
 
+/* Mobile version */
+@media (max-width: 768px) {
+  /* Adjust padding for mobile */
+  .breadcrumbs {
+    padding: 50px 0 40px 0;
+  }
+
+  /* Adjust min-height for mobile */
+  .breadcrumbs {
+    min-height: 10vh;
+  }
+}
+
 .breadcrumbs:before {
   content: "";
   background-color: rgba(27, 47, 69, 0.7);
@@ -494,7 +507,7 @@ section {
 --------------------------------------------------------------*/
 .hero {
   width: 100%;
-  min-height: 100vh;
+  min-height: 70vh;
   background: url("../img/cover.PNG") top center;
   background-size: cover;
   position: relative;
@@ -502,6 +515,17 @@ section {
   z-index: 3;
 }
 
+@media (max-width: 768px) {
+  /* Adjust padding for mobile */
+  .hero {
+    padding: 250px 0 40px 0;
+  }
+
+  /* Adjust min-height for mobile */
+  .hero {
+    min-height: 10vh;
+  }
+}
 
 
 .hero:before {
@@ -672,13 +696,15 @@ section {
 
 @media (max-width: 575px) {
   .why-us .swiper {
-    margin: 40px 40px 20px 40px;
+    margin: 20px 0px 20px 0px;
   }
 }
 
 .page-about .why-us {
   padding: 0 0 80px 0;
 }
+
+
 
 /*--------------------------------------------------------------
 # About Section
@@ -729,6 +755,15 @@ section {
   position: relative;
   color: #37517e;
 }
+.section-title h4 {
+  font-size: 22px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #37517e;
+}
 
 .section-title h2::before {
   content: "";
@@ -752,8 +787,28 @@ section {
   left: calc(50% - 20px);
 }
 
+.section-title h4::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #47b2e4;
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+
 .section-title p {
   margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  /* Adjust padding for mobile */
+  .section-title h2 {
+    font-size: 25px;
+  }
+
+ 
 }
 
 
